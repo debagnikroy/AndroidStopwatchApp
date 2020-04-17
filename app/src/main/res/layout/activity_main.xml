@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="6"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#F6ED96"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+
+            android:clickable="false"
+            android:fadingEdge="horizontal|vertical"
+
+            android:foregroundGravity="center_vertical|center_horizontal|fill"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            tools:autoText="false"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp">
+
+        <ScrollView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DAFCF6">
+
+            <TextView
+                android:id="@+id/lapTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="25dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="25dp"/>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#9C84AD"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:text="Start"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="642dp"
+            tools:textColor="@android:color/holo_green_dark">
+
+        </Button>
+
+        <Button
+            android:id="@+id/b2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:background="@android:color/background_light"
+            android:text="LAP"
+            android:textColor="@android:color/holo_red_dark"
+            tools:layout_editor_absoluteX="262dp"
+            tools:layout_editor_absoluteY="640dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
